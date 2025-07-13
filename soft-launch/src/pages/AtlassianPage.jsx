@@ -84,22 +84,38 @@ Interns at Atlassian work on production code from day one, paired with experienc
     </button>
   );
 
-  const SubBtn = ({ id }) => (
+/* ---------- prep-sub-tab pill ------------ */
+const SubBtn = ({ id }) => {
+  // external jump-links for the two interview tabs
+  const external =
+    id === "Behavioural Interview"
+      ? "/academy#behavioural"
+      : id === "Technical Interview"
+      ? "/academy#technical"
+      : null;
+
+  const base = {
+    padding: "8px 16px",
+    borderRadius: 8,
+    background: sub === id ? "#10b981" : "#e5e7eb",
+    color: sub === id ? "#ffffff" : "#111827",
+    fontWeight: 600,
+    fontSize: 14,
+    whiteSpace: "nowrap",
+  };
+
+  // if it’s an interview tab → render as link, otherwise keep it a local selector
+  return external ? (
+    <a href={external} style={{ ...base, textDecoration: "none" }}>{id}</a>
+  ) : (
     <span
       onClick={() => setSub(id)}
-      style={{
-        padding: "8px 16px",
-        borderRadius: 8,
-        background: sub === id ? "#10b981" : "#e5e7eb",
-        color: sub === id ? "#fff" : "#111827",
-        cursor: "pointer",
-        fontWeight: 600,
-        fontSize: 14,
-      }}
+      style={{ ...base, cursor: "pointer" }}
     >
       {id}
     </span>
   );
+};
 
   /* ───────── render ───────── */
   return (
@@ -198,3 +214,5 @@ const newsStyle = {
 
 const card = { background:"#fff", borderRadius:12,
                boxShadow:"0 1px 4px rgba(0,0,0,.12)" };
+
+               
