@@ -12,8 +12,7 @@ import {
   isSameMonth,
 } from "date-fns";
 
-/* --------------------------------- */
-/*  Replace or fetch this array later */
+
 const INTERNSHIPS = [
   { id: 1, name: "Atlassian",      open: "2025-07-10", close: "2025-08-02" },
   { id: 2, name: "Google STEP",    open: "2025-07-18", close: "2025-09-01" },

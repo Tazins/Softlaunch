@@ -35,7 +35,7 @@ const styles = {
 export default function HomePage() {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* ---------------- NAVBAR ---------------- */}
+      {/* NAVBAR  */}
       <header style={styles.navBar}>
         {/* brand */}
         <a
@@ -69,7 +69,7 @@ export default function HomePage() {
         </nav>
       </header>
 
-      {/* ---------------- HERO ---------------- */}
+      {/*  HERO  */}
       
       <main
         style={{

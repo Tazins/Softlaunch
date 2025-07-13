@@ -1,42 +1,11 @@
 import { useState } from 'react';
 import JobCard from '../components/JobCard.jsx';
 
-// ------- temporary data (replace with API fetch later) -------
+// temporary data (replace with API fetch later) -------
 const JOBS = [
-  {
-    id: 1,
-    title: 'Clerkship',
-    company: 'Gadens',
-    city: 'Sydney',
-    type: 'Internship',
-    closes: '13 Jul 2025',
-    banner: '/assets/gadens.jpg',
-    logo: '/logos/gadens.svg',
-    role: 'Law',    // fields for filters
-  },
-  {
-    id: 2,
-    title: 'Clerkship',
-    company: 'Maddocks',
-    city: 'Sydney',
-    type: 'Internship',
-    closes: '13 Jul 2025',
-    banner: '/assets/maddocks.jpg',
-    logo: '/logos/maddocks.svg',
-    role: 'Law',
-  },
-  {
-    id: 3,
-    title: 'Seasonal Clerkship',
-    company: 'Gilbert + Tobin',
-    city: 'Perth',
-    type: 'Internship',
-    closes: '13 Jul 2025',
-    banner: '/assets/gt.jpg',
-    logo: '/logos/gt.svg',
-    role: 'Law',
-  },
-  // …add the rest
+
+  
+
 ];
 
 export default function JobsPage() {

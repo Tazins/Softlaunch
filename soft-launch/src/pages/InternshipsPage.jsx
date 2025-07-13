@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import NavBar from "../components/NavBar.jsx";
 import CompanyCard from "../components/CompanyCard.jsx";
 
-/* ---------- DATA ---------------- */
+/*  DATA  */
 const COMPANIES = [
   { id: 1, name: "Atlassian",      logo: "/atlassian.png",   industry: "SaaS",            city: "Sydney",     open: "2025-07-10", close: "2025-08-02", url: "/companies/atlassian" },
   { id: 2, name: "Google",         logo: "/google.webp",     industry: "Internet",        city: "Sydney",     open: "2025-07-18", close: "2025-09-01", url: "#" },

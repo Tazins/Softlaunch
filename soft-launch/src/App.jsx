@@ -6,6 +6,7 @@ import InternshipsPage from "./pages/InternshipsPage.jsx";
 import CalendarPage    from "./pages/CalendarPage.jsx";  
 import AtlassianPage   from "./pages/AtlassianPage.jsx"; 
 import AcademyPractice from "./pages/AcademyPractice.jsx";
+import PracticeResult from "./pages/PracticeResult.jsx";
 
 function Placeholder() {
   return (
@@ -21,11 +22,12 @@ export default function App() {
       <Routes>
         <Route path="/"            element={<HomePage />} />
         <Route path="/internships" element={<InternshipsPage />} />
-        <Route path="/calendar"    element={<CalendarPage />} />  {/* ← NEW */}
-        <Route path="/companies/atlassian"    element={<AtlassianPage />} /> {/* profile */}
+        <Route path="/calendar"    element={<CalendarPage />} />
+        <Route path="/companies/atlassian"    element={<AtlassianPage />} /> 
         <Route path="/jobs"        element={<JobsPage />} />
         <Route path="/jobs/:id"    element={<Placeholder />} />
-        <Route path="/academy" element={<AcademyPractice />} />
+        <Route path="/academy"          element={<AcademyPractice/>} />
+        <Route path="/academy/result"   element={<PracticeResult/>} />
 
       </Routes>
     </BrowserRouter>
