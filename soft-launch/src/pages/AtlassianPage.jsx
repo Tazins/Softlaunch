@@ -47,7 +47,7 @@ Interns at Atlassian work on production code from day one, paired with experienc
       Resume: [
         {
           id   : 1,
-          title: "Intern Résumé – Software Engineer 2024 (hired)",
+          title: "Intern Resume – Software Engineer 2024 (hired)",
           date : "PDF · 2 pages",
           url  : "/resume.pdf",
         },
